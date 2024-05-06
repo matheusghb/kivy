@@ -4,7 +4,7 @@ from kivy.uix.label import Label
 
 class MinhaApp(App):
     def build (self):
-        carousel = Carousel()
+        carousel = Carousel(direction='right', loop=True)
 
         for i in range(3):
             label = Label(text=f"Slide {i+1}")
